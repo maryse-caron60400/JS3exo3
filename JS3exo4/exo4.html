@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" value="" id="motdepasse" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
+    <button type="button" name="button" onclick="control()">Vérification</button>
+  </form>
+  <script>
+  function control() {
+  var value1 = document.getElementById("motdepasse");
+  var value2 = document.getElementById("confirmation");
+  if (value1.value === value2.value) {
+    value2.style.border = value1.style.border = "5px solid green";
+  }
+  else {
+    value2.style.border =value1.style.border = "5px solid red";
+  }
+}
+  </script>
+</body>
+</html>
